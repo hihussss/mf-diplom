@@ -62,16 +62,18 @@ body {
 	font-family: OpenSans,sans-serif;
 	font-weight:Bold;
 	font-size:45px;
+	text-transform: uppercase;
 }
 
-li:nth-child(n+2){
+.menu_item:nth-child(n+2){
 	margin-left: 35px;
 }
 
 .logo_menu {
 	display:flex;
+	min-width: 1185px;
 	padding-top: 28px;
-	justify-content:space-between;
+	justify-content:space-evenly;
 	
 }
 
@@ -83,21 +85,23 @@ li:nth-child(n+2){
 	font-weight:Normal;
 	font-size:13px;
 	
-	color: white;
 }
 .menu_item:hover {
 	
 	text-decoration:underline;
 }
 
-.box_menu {
-	margin-right:240px;
+.link_menu {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
 }
+
 
 .logo {
 	width: 200px;
 	height: 50px;
-	margin-left:250px;
+	
 }
 
 
@@ -116,6 +120,8 @@ li:nth-child(n+2){
 
 
 .title_trends {
+	margin:0;
+	
 	font-family: OpenSans,sans-serif;
 	font-weight: Bold;
 	font-size: 20px;
@@ -141,6 +147,9 @@ li:nth-child(n+2){
 	min-height: 320px;
 }
 
+.post_title_double {
+	text-transform: uppercase;
+}
 
 .post_trends1 {
 	position: relative;
@@ -258,11 +267,14 @@ li:nth-child(n+2){
 
 .category {
 	display:flex;
+	margin-top: 0;
 	margin-bottom: 9px;
+	padding: 0;
 	
 	font-family:OpenSans,sans-serif;
 	font-weight:Bold;
 	font-size: 14px;
+	list-style-type: none;
 	
 	color:#b59f5b;	
 }
@@ -276,6 +288,12 @@ li:nth-child(n+2){
 	color: #ffffff;	
 }
 
+.post_title_double {
+	margin: 0;
+}
+
+
+
 .name_category:nth-child(n+2) {
 	margin-left:20px;
 }
@@ -284,6 +302,12 @@ li:nth-child(n+2){
 	display: flex;
 	justify-content: center;
 	
+}
+
+.link{
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#b59f5b;
 }
 
 .post_news {
@@ -306,6 +330,7 @@ li:nth-child(n+2){
 	font-weight: Bold;
 	font-size: 20px;
 	line-height: 24px;
+	text-transform: uppercase;
 		
 	color: #000000;	
 }
@@ -377,10 +402,13 @@ li:nth-child(n+2){
 }
 
 .post_title_aside {
+	margin: 0;
+	
 	font-family: OpenSans,sans-serif;
 	font-weight: Bold;
 	font-size: 14px;
 	line-height: 18px;
+	text-transform: uppercase;
 		
 	color: #000000;
 }
@@ -512,6 +540,7 @@ li:nth-child(n+2){
 	font-family: OpenSans,sans-serif;
 	font-weight: Bold;
 	font-size: 12px;
+	text-transform: uppercase;
 
 	border: 3px solid #eeeeee;	
 	
@@ -529,6 +558,11 @@ li:nth-child(n+2){
 	font-size: 14px;
 }
 
+.list_theme {
+	padding: 0;
+	margin: 0;
+}
+
 .theme {
 	position: relative;
 	
@@ -537,11 +571,18 @@ li:nth-child(n+2){
 	font-family: OpenSans,sans-serif;
 	font-weight: Bold;
 	font-size: 14px;
+	list-style-type: none;
 	
 	border-bottom: 1px solid #eeeeee;
 }
 
-.theme:hover {
+.link_theme {
+	text-decoration: none;
+	text-transform: capitalize;
+	color: black;
+}
+
+.link_theme:hover {
 	color: #b59f5b;
 }
 
@@ -559,8 +600,7 @@ li:nth-child(n+2){
 
 /* Магазин */
 .shop_lenta {
-	padding-left:auto;
-	padding-right:auto;
+	min-height: 500px;
 }
 
 .box_shop {
@@ -598,6 +638,8 @@ li:nth-child(n+2){
 }
 
 .title_product {
+	margin: 0;
+	
 	font-family: OpenSans,sans-serif;
 	font-weight: Bold;
 	font-size: 20px;
@@ -687,13 +729,27 @@ li:nth-child(n+2){
 
 /* footer */
 
+.box_footer {
+	width: 1170px;
+	margin-top: 34px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .social_box {
 	display: flex;
 	justify-content: center;
-	height: 82px;
-	padding-top: 41px;
+	min-height: 82px;
+	padding-top: 31px;
+	box-sizing: border-box;
+	
+	list-style-type: none;
 	
 	background-color: #f4f7f6;
+}
+
+.screenreader {
+	display:none;
 }
 
 .image_social {
