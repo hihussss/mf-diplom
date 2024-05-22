@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>MF diplom</title>
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -22,12 +23,37 @@
 					<li class="menu_item"><a class="link_menu" href="#">контакты</a></li>
 				</ul>
 			</nav>
+			<div class="button_nav">
+				<button class="button_menu"></button>
+				<button class="button_menu"></button>
+				<button class="button_menu"></button>
+			</div>	
 		</div>	
 		<div class="conteiner">
 		<h1 class="welcome_title">блог о творчестве, спорте, и образе жизни</h1>
 		</div>
 	</header>
 	<main>
+		<div class="box_feedback">
+			<div class="box_title_feedback">	
+				<h2 class="title_trends">ваш фидбек</h2>
+			</div>
+			<form class="form">
+				<p class="form_text"><span class="letter">к</span>ак часто вы заходите на сайт</p>
+				<input class="input" type="text" placeholder="Почти каждый день"  required>
+				<p class="form_text"><span class="letter">в</span>ы подписаны на e-mail рассылку?</p>
+				<label class="label">
+				<input class="radio" type="radio" name="radio" checked>
+				<span class="radio_text">да</span></label>
+				<label class="label">
+					<input class="radio" type="radio" name="radio">
+					<span class="radio_text">нет</span>
+				</label>
+				<p class="form_text"><span class="letter">р</span>асскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+				<textarea class="textarea" placeholder="Может, больше рецептов?"></textarea>
+				<button class="button_form" type="submit">отправить</button>
+			</form>		
+		</div>				
 		<section class="trends">
 			<div class="box_title_trends">	
 				<h2 class="title_trends">сейчас в тренде</h2>
@@ -40,7 +66,7 @@
 							<li class="name_category"><a class="link" href="#">food</a></li>
 						</ul>
 						<div class="post_title">
-							<h3 class="post_title_double"><a class="link_trends" href="#">сейчас в тренде: садна подоконнике</a></h3>
+							<h3 class="post_title_double"><a class="link_trends" href="#">сейчас в тренде: сад на подоконнике</a></h3>
 						</div>
 					</div>
 				</article>
@@ -238,7 +264,7 @@
 				<section>	
 					<div class="box_subscribe">
 						<div class="box_title_trends">
-							<h2 class="title_trends">рассылка</h2>
+							<h3 class="title_trends">рассылка</h3>
 						</div>
 						<div class="box_mail">
 							<form class="form">
@@ -251,7 +277,7 @@
 				<section>	
 					<div class="box_tag">
 						<div class="box_title_trends">
-							<h2 class="title_trends">теги</h2>
+							<h3 class="title_trends">теги</h3>
 						</div>
 						<ul class="list_tag">
 							<li class="tag"><a class="tag_link" href="#">fashion</a></li>
@@ -268,7 +294,7 @@
 				<section>	
 					<div class="box_theme">
 						<div class="box_title_trends">
-							<h2 class="title_trends">темы</h2>
+							<h3 class="title_trends">темы</h3>
 						</div>
 						<ul class="list_theme">
 							<li class="theme">
