@@ -112,6 +112,7 @@ body {
 
 
 .box_feedback {
+	display: none;
 	position: fixed;
 	width: 20vw;
 	height: 30vw;
