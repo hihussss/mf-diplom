@@ -1042,20 +1042,25 @@ body::before {
 	.sign_post{
 		margin: 4vw 0;
 	}
+	.info_box{
+		width: 90%;
+		
+		justify-content: space-between;		
+	}
 
 	.news_box{
-		width: 387px;
+		width: 100%;
+		
+	}
+
+	.image_news img{
+		width: 100%;
 	}
 
 	.description_news{
 		margin-top: 1vw;
 		margin-left: 0;
-	}
-
-	
-	.info_box {
-		width: 90vw;
-	
+		max-width: 100%;
 	}
 
 	.aside_bar{
@@ -1195,18 +1200,23 @@ body::before {
 	}
 
 	.news_box{
-		width: 387px;
+		flex-grow: 2;
 	}
 
 	.description_news{
 		margin-top: 1vw;
 		margin-left: 0;
+		max-width: 100%;
+	}
+
+	.image_news img {
+		width: 100%;
 	}
 
 	
 	.info_box {
 		width: 90vw;
-	
+
 	}
 
 	.aside_bar{
@@ -1288,6 +1298,8 @@ body::before {
 
 	.banner{
 		width: 100%;
+		min-height: 640px;
+		
 	}
 	
 	.logo_menu{
@@ -1607,13 +1619,13 @@ body::before {
 	}
 
 	.box_trends {
+		width: 100%;
 		flex-wrap: wrap;
-		justify-content: space-evenly;
+		justify-content: space-between;
 	}
 
 	.post_trends1, .post_trends2, .post_trends3, .post_trends4 {
-		width: 48vw;
-		height: 32vw;
+		width: 49vw;
 		margin-left: 0;
 		
 	}
@@ -1623,6 +1635,7 @@ body::before {
 	}
 
 	.info_box{
+		width: 90vw;
 		flex-direction: column;
 	}
 
@@ -1689,11 +1702,6 @@ body::before {
 		width: 90vw;
 		margin-top: 1vw;
 		margin-left: 0;
-	}
-
-	.info_box {
-		width: 90vw;
-	
 	}
 
 	.aside_bar{
